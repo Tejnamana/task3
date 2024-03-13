@@ -1,0 +1,76 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root{
+  --orange:#f2b04e;
+  --winning-blocks:#2d414b;
+
+}
+body{
+  color:rgba(233, 222, 7, 0.863);
+  font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+h1{
+  font-size: 55px;
+  font-weight: bold;
+  text-shadow: 2px 2px 2px black;
+  text-transform: uppercase;
+}
+.container{
+  background-color: #37505c;
+  padding: 40px;
+  height:100vh;
+  align-items: center;
+  justify-content: center;
+  display:flex;
+  flex-direction: column;
+}
+#gameboard {
+  width: 470px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 40px;
+}
+.box{
+  height: 150px;
+  width: 150px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #F2C14E;
+  font-size: 120px;
+  border-right: 2px solid;
+  border-bottom: 2px solid;
+  
+}
+.box:nth-child(3n){ 
+  border-right: none;
+}
+.box:nth-child(6) ~ .box{
+  border-bottom: none;
+}
+#restartbtn{
+  padding-top: 10px;
+  padding-left: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+  font-size: medium;
+  font-style: oblique;
+  font-weight: bold;
+  background-color: brown;
+  color: beige;
+  margin-top:29px;
+  transition: color 2s, baclground-color 2s;
+  border-radius: 10px;
+  border:none;
+
+}
+#restartbtn:hover {
+  background-color: darksalmon;
+  color: black;
+  
+}
+
